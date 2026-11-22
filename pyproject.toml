@@ -1,0 +1,27 @@
+[project]
+name = "earnings-alpha"
+version = "0.1.0"
+description = "Side-project research: do earnings-call sentiment features predict post-call abnormal returns?"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=15",
+    "datasets>=2.19",   # Hugging Face datasets (transcript source)
+    "numpy>=1.26",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+nlp = [
+    "transformers>=4.40",  # FinBERT, later stage
+    "torch>=2.2",
+]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

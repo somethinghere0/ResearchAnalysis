@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data: never commit raw or large derived data
+data/raw/
+data/interim/
+*.parquet
+*.csv
+
+# Keep small, reviewable outputs
+!data/results/*.csv
+
+# Secrets
+.env
+.env.*
+
+# OS
+.DS_Store
