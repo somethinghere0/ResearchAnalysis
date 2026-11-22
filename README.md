@@ -44,3 +44,4 @@ src/earnings_alpha/   library code
 scripts/              numbered, runnable pipeline steps
 data/raw|interim|results/
 ```
+

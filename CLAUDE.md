@@ -25,4 +25,7 @@ README.md for the plan.
 
 ## Status
 - Scaffold created. Feasibility check (`01_inspect_dataset.py`) not yet run.
+- LM scoring (`lexicon.py`) implemented and tested on the real dictionary
+  (`data/raw/lm_master_dictionary.csv`, user-downloaded); not yet run on real transcripts.
+- Log every feature variant in `docs/experiments.md` when it is defined.
 - Web frontend (Next.js on Vercel) is deferred until there is a signal worth showing.
