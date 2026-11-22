@@ -7,7 +7,10 @@ README.md for the plan.
 ## Hard rules
 - No paid APIs (including the Claude API). Free data and free/local models only.
 - Heavy NLP (FinBERT, open LLMs) runs locally or in CI, never in serverless functions.
-- US equities only.
+- US large-cap equities only (mid/small caps were considered and dropped).
+- Two studies: (1) compare sentiment tools, (2) estimate alpha for the winner.
+  Select-then-freeze: pick the tool on an earlier period, measure alpha only on a
+  later untouched period.
 - No lookahead: trade only after the call ends (next open at the earliest).
 - Walk-forward validation only; log every feature/horizon tried (multiple-testing).
 - Control for earnings surprise (use announcement-window return as proxy if no consensus data).
